@@ -1,7 +1,7 @@
 --- 
 title: "The STRAF Book"
 author: "Alexandre Gouy and Martin Zieger"
-date: "2022-07-08"
+date: "2024-12-03"
 site: bookdown::bookdown_site
 documentclass: book
 output: bookdown::bs4_book

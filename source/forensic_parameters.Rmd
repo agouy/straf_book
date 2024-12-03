@@ -66,7 +66,17 @@ having a random match between two individuals having the same genotype is 0.05 x
 To get an overall probability of matching, we sum this over all possible genotypes
 in our population.
 
-## Power of Discrimination (PD)
+__References__
+
+> Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.
+
+> Jones (1972). Blood samples: probability of discrimination. Journal of the Forensic science Society, 12(2), 355-359.
+
+> Sensabaugh (1982) - Isozymes in forensic science. In: Isozymes Current Topics in Biological and Medical Research Volume 6 (editor, Liss, A. R.) pp. 247–282.
+
+
+
+### Power of Discrimination (PD)
 
 The power of discrimination (PD) is defined as the probability of
 discriminating between two unrelated individuals.
@@ -82,7 +92,12 @@ __Interpretation__
 PD is simply 1 - PM. Instead of looking at the probability of matching, we are
 interested in the probability of "not matching", i.e. the probability of discrimination.
 
-## Gene diversity
+__Reference__
+
+Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.
+
+
+### Gene diversity
 
 __Gene diversity__ ($GD$, sometimes simply $D$), also called __expected heterozygosity__ 
 ($H_{\mathrm{exp}}$), is computed using the following estimator:
@@ -117,7 +132,13 @@ in a population with allele frequencies 0.5 and 0.5 than in a population where
 frequencies are 0.1 and 0.9 (as less heterozygotes can be made with rare
 alleles). This rationale can be extended to any number of alleles.
 
-## Polymorphism Information Content (PIC)
+__References__
+
+> Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.
+
+> Nei (1973). Analysis of gene diversity in subdivided populations. Proc. Natl. Acad. Sci. USA 70: 3321–3323.
+
+### Polymorphism Information Content (PIC)
 
 __Formula__
 
@@ -138,8 +159,14 @@ deducible
 * or, the probability of being able to deduce which allele a
 parent has transmitted to the child.
 
+__References__
 
-## Power of Exclusion (PE)
+> Botstein, White, Skolnick, Davis (1980). Construction of a genetic linkage map in man using restriction fragment length polymorphisms. American journal of human genetics, 32(3), 314.
+
+> Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.
+
+
+### Power of Exclusion (PE)
 
 __Formula__
 
@@ -156,7 +183,13 @@ __Interpretation__
 
 The power of exclusion depends on the observed proportions of heterozygous and homozygous individuals in a population. These proportions, multiplied as in the equation above, give the __mean exclusion probability for a paternity test__. Intuitively, the more diverse the population is, the greater this value is, as diversity is related to heterozygosity (see above).
 
-## Typical Paternity Index (TPI)
+__References__
+
+> Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.
+
+> Fisher (1951) - Standard Calculations for Evaluating a Blood-Group System. Heredity, 5: 95-102.
+
+### Typical Paternity Index (TPI)
 
 Finally, the typical paternity index ($TPI$) reflects the “mean PI for
 random non-excluded men“ in trio cases (father-mother-child) for a given locus. 
@@ -176,4 +209,8 @@ range and cannot be interpreted as a probability. It is a ratio of 1 divided by
 twice the frequency of homozygotes in the population. This is an __odds ratio__,
 measuring how many times more likely that a possible father is the actual 
 father than a randomly selected man in the population, on average (*typical* case).
+
+__Reference__
+
+> Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.
 

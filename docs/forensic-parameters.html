@@ -7,7 +7,7 @@
 <title>Chapter 3 Forensic parameters | The STRAF Book</title>
 <meta name="author" content="Alexandre Gouy and Martin Zieger">
 <meta name="description" content="In this chapter, we’ll show how to compute forensic parameters using STRAF, and provide details on how they are computed and should be interpreted. We’ll introduce a few equations, but please do...">
-<meta name="generator" content="bookdown 0.25 with bs4_book()">
+<meta name="generator" content="bookdown 0.41 with bs4_book()">
 <meta property="og:title" content="Chapter 3 Forensic parameters | The STRAF Book">
 <meta property="og:type" content="book">
 <meta property="og:description" content="In this chapter, we’ll show how to compute forensic parameters using STRAF, and provide details on how they are computed and should be interpreted. We’ll introduce a few equations, but please do...">
@@ -16,7 +16,7 @@
 <meta name="twitter:description" content="In this chapter, we’ll show how to compute forensic parameters using STRAF, and provide details on how they are computed and should be interpreted. We’ll introduce a few equations, but please do...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.8.0/transition.js"></script><script src="libs/bs3compat-0.8.0/tabs.js"></script><script src="libs/bs3compat-0.8.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -141,12 +141,21 @@ is the probability of sampling this genotype multiplied by itself.</p>
 having a random match between two individuals having the same genotype is 0.05 x 0.05.</p>
 <p>To get an overall probability of matching, we sum this over all possible genotypes
 in our population.</p>
+<p><strong>References</strong></p>
+<blockquote>
+<p>Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.</p>
+</blockquote>
+<blockquote>
+<p>Jones (1972). Blood samples: probability of discrimination. Journal of the Forensic science Society, 12(2), 355-359.</p>
+</blockquote>
+<blockquote>
+<p>Sensabaugh (1982) - Isozymes in forensic science. In: Isozymes Current Topics in Biological and Medical Research Volume 6 (editor, Liss, A. R.) pp. 247–282.</p>
+</blockquote>
 </div>
-</div>
-<div id="power-of-discrimination-pd" class="section level2" number="3.3">
-<h2>
-<span class="header-section-number">3.3</span> Power of Discrimination (PD)<a class="anchor" aria-label="anchor" href="#power-of-discrimination-pd"><i class="fas fa-link"></i></a>
-</h2>
+<div id="power-of-discrimination-pd" class="section level3" number="3.2.2">
+<h3>
+<span class="header-section-number">3.2.2</span> Power of Discrimination (PD)<a class="anchor" aria-label="anchor" href="#power-of-discrimination-pd"><i class="fas fa-link"></i></a>
+</h3>
 <p>The power of discrimination (PD) is defined as the probability of
 discriminating between two unrelated individuals.</p>
 <p><strong>Formula</strong></p>
@@ -155,12 +164,14 @@ PD = 1 - PM
 \]</span></p>
 <p><strong>Interpretation</strong></p>
 <p>PD is simply 1 - PM. Instead of looking at the probability of matching, we are
-interested in the probability of “not matching,” i.e. the probability of discrimination.</p>
+interested in the probability of “not matching”, i.e. the probability of discrimination.</p>
+<p><strong>Reference</strong></p>
+<p>Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.</p>
 </div>
-<div id="gene-diversity" class="section level2" number="3.4">
-<h2>
-<span class="header-section-number">3.4</span> Gene diversity<a class="anchor" aria-label="anchor" href="#gene-diversity"><i class="fas fa-link"></i></a>
-</h2>
+<div id="gene-diversity" class="section level3" number="3.2.3">
+<h3>
+<span class="header-section-number">3.2.3</span> Gene diversity<a class="anchor" aria-label="anchor" href="#gene-diversity"><i class="fas fa-link"></i></a>
+</h3>
 <p><strong>Gene diversity</strong> (<span class="math inline">\(GD\)</span>, sometimes simply <span class="math inline">\(D\)</span>), also called <strong>expected heterozygosity</strong>
 (<span class="math inline">\(H_{\mathrm{exp}}\)</span>), is computed using the following estimator:</p>
 <p><strong>Formula</strong></p>
@@ -184,11 +195,18 @@ allele frequencies in your population.</p>
 in a population with allele frequencies 0.5 and 0.5 than in a population where
 frequencies are 0.1 and 0.9 (as less heterozygotes can be made with rare
 alleles). This rationale can be extended to any number of alleles.</p>
+<p><strong>References</strong></p>
+<blockquote>
+<p>Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.</p>
+</blockquote>
+<blockquote>
+<p>Nei (1973). Analysis of gene diversity in subdivided populations. Proc. Natl. Acad. Sci. USA 70: 3321–3323.</p>
+</blockquote>
 </div>
-<div id="polymorphism-information-content-pic" class="section level2" number="3.5">
-<h2>
-<span class="header-section-number">3.5</span> Polymorphism Information Content (PIC)<a class="anchor" aria-label="anchor" href="#polymorphism-information-content-pic"><i class="fas fa-link"></i></a>
-</h2>
+<div id="polymorphism-information-content-pic" class="section level3" number="3.2.4">
+<h3>
+<span class="header-section-number">3.2.4</span> Polymorphism Information Content (PIC)<a class="anchor" aria-label="anchor" href="#polymorphism-information-content-pic"><i class="fas fa-link"></i></a>
+</h3>
 <p><strong>Formula</strong></p>
 <p>The <strong>Polymorphism Information Content</strong> (PIC) is computed as follow:</p>
 <p><span class="math display">\[
@@ -203,11 +221,18 @@ deducible</p></li>
 <li><p>or, the probability of being able to deduce which allele a
 parent has transmitted to the child.</p></li>
 </ul>
+<p><strong>References</strong></p>
+<blockquote>
+<p>Botstein, White, Skolnick, Davis (1980). Construction of a genetic linkage map in man using restriction fragment length polymorphisms. American journal of human genetics, 32(3), 314.</p>
+</blockquote>
+<blockquote>
+<p>Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.</p>
+</blockquote>
 </div>
-<div id="power-of-exclusion-pe" class="section level2" number="3.6">
-<h2>
-<span class="header-section-number">3.6</span> Power of Exclusion (PE)<a class="anchor" aria-label="anchor" href="#power-of-exclusion-pe"><i class="fas fa-link"></i></a>
-</h2>
+<div id="power-of-exclusion-pe" class="section level3" number="3.2.5">
+<h3>
+<span class="header-section-number">3.2.5</span> Power of Exclusion (PE)<a class="anchor" aria-label="anchor" href="#power-of-exclusion-pe"><i class="fas fa-link"></i></a>
+</h3>
 <p><strong>Formula</strong></p>
 <p>The <strong>power of exclusion</strong> (<span class="math inline">\(PE\)</span>) is defined as:</p>
 <p><span class="math display">\[
@@ -217,11 +242,18 @@ PE = h^2\left(1 - 2hH^2\right),
 proportion of homozygous individuals in the population sample.</p>
 <p><strong>Interpretation</strong></p>
 <p>The power of exclusion depends on the observed proportions of heterozygous and homozygous individuals in a population. These proportions, multiplied as in the equation above, give the <strong>mean exclusion probability for a paternity test</strong>. Intuitively, the more diverse the population is, the greater this value is, as diversity is related to heterozygosity (see above).</p>
+<p><strong>References</strong></p>
+<blockquote>
+<p>Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.</p>
+</blockquote>
+<blockquote>
+<p>Fisher (1951) - Standard Calculations for Evaluating a Blood-Group System. Heredity, 5: 95-102.</p>
+</blockquote>
 </div>
-<div id="typical-paternity-index-tpi" class="section level2" number="3.7">
-<h2>
-<span class="header-section-number">3.7</span> Typical Paternity Index (TPI)<a class="anchor" aria-label="anchor" href="#typical-paternity-index-tpi"><i class="fas fa-link"></i></a>
-</h2>
+<div id="typical-paternity-index-tpi" class="section level3" number="3.2.6">
+<h3>
+<span class="header-section-number">3.2.6</span> Typical Paternity Index (TPI)<a class="anchor" aria-label="anchor" href="#typical-paternity-index-tpi"><i class="fas fa-link"></i></a>
+</h3>
 <p>Finally, the typical paternity index (<span class="math inline">\(TPI\)</span>) reflects the “mean PI for
 random non-excluded men“ in trio cases (father-mother-child) for a given locus.</p>
 <p><strong>Formula</strong></p>
@@ -235,7 +267,12 @@ range and cannot be interpreted as a probability. It is a ratio of 1 divided by
 twice the frequency of homozygotes in the population. This is an <strong>odds ratio</strong>,
 measuring how many times more likely that a possible father is the actual
 father than a randomly selected man in the population, on average (<em>typical</em> case).</p>
+<p><strong>Reference</strong></p>
+<blockquote>
+<p>Butler (2014) - Advanced Topics in Forensic DNA Typing: Interpretation, pp. 264-265. Academic Press.</p>
+</blockquote>
 
+</div>
 </div>
 </div>
   <div class="chapter-nav">
@@ -247,13 +284,15 @@ father than a randomly selected man in the population, on average (<em>typical</
 <li><a class="nav-link" href="#forensic-parameters"><span class="header-section-number">3</span> Forensic parameters</a></li>
 <li><a class="nav-link" href="#how-to-compute-forensic-parameters-in-straf"><span class="header-section-number">3.1</span> How to compute forensic parameters in STRAF</a></li>
 <li>
-<a class="nav-link" href="#details-on-the-forensic-parameters"><span class="header-section-number">3.2</span> Details on the forensic parameters</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#random-match-probability-pm"><span class="header-section-number">3.2.1</span> Random match probability (PM)</a></li></ul>
+<a class="nav-link" href="#details-on-the-forensic-parameters"><span class="header-section-number">3.2</span> Details on the forensic parameters</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#random-match-probability-pm"><span class="header-section-number">3.2.1</span> Random match probability (PM)</a></li>
+<li><a class="nav-link" href="#power-of-discrimination-pd"><span class="header-section-number">3.2.2</span> Power of Discrimination (PD)</a></li>
+<li><a class="nav-link" href="#gene-diversity"><span class="header-section-number">3.2.3</span> Gene diversity</a></li>
+<li><a class="nav-link" href="#polymorphism-information-content-pic"><span class="header-section-number">3.2.4</span> Polymorphism Information Content (PIC)</a></li>
+<li><a class="nav-link" href="#power-of-exclusion-pe"><span class="header-section-number">3.2.5</span> Power of Exclusion (PE)</a></li>
+<li><a class="nav-link" href="#typical-paternity-index-tpi"><span class="header-section-number">3.2.6</span> Typical Paternity Index (TPI)</a></li>
+</ul>
 </li>
-<li><a class="nav-link" href="#power-of-discrimination-pd"><span class="header-section-number">3.3</span> Power of Discrimination (PD)</a></li>
-<li><a class="nav-link" href="#gene-diversity"><span class="header-section-number">3.4</span> Gene diversity</a></li>
-<li><a class="nav-link" href="#polymorphism-information-content-pic"><span class="header-section-number">3.5</span> Polymorphism Information Content (PIC)</a></li>
-<li><a class="nav-link" href="#power-of-exclusion-pe"><span class="header-section-number">3.6</span> Power of Exclusion (PE)</a></li>
-<li><a class="nav-link" href="#typical-paternity-index-tpi"><span class="header-section-number">3.7</span> Typical Paternity Index (TPI)</a></li>
 </ul>
 
       <div class="book-extra">
@@ -270,7 +309,7 @@ father than a randomly selected man in the population, on average (<em>typical</
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The STRAF Book</strong>" was written by Alexandre Gouy and Martin Zieger. It was last built on 2022-07-08.</p>
+    <p>"<strong>The STRAF Book</strong>" was written by Alexandre Gouy and Martin Zieger. It was last built on 2024-12-03.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
@@ -283,7 +322,7 @@ father than a randomly selected man in the population, on average (<em>typical</
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
